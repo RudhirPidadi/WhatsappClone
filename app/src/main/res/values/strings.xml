@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Whatsapp clone</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">vGXUQ5x1uslbjCNPuukFbvuCNBr2YR9gvRA7ZTlB</string>
+    <string name="back4app_client_key">pWxnyKnEvlT9OdHPTy4NqahiB8whqfMrY78gra41</string>
+
+</resources>
