@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity
     private EditText LoginUsernameEditText;
     private EditText LoginPasswordEditText;
     private Button LoginButton;
+    private Button NavigateToSignUpButton;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         LoginUsernameEditText=findViewById(R.id.login_username_edit_text);
         LoginPasswordEditText=findViewById(R.id.login_password_edit_text);
         LoginButton=findViewById(R.id.login_button);
+        NavigateToSignUpButton=findViewById(R.id.navigate_to_sign_up_menu_button);
     }
 
 
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        Intent intent = new Intent(MainActivity.this, WhatsappUsersActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
